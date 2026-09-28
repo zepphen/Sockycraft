@@ -2,7 +2,7 @@
 
 A Minecraft modpack for friends and family.
 
-**Minecraft 1.21.1** · **NeoForge** · 80 mods
+**Minecraft 1.21.1** · **NeoForge** · 79 mods
 
 Create, Farmer's Delight, furniture, cozy critters, horse-drawn carts, shared maps and waypoints, proximity voice chat, and a full set of YUNG's structure overhauls.
 
@@ -85,7 +85,6 @@ This repo holds the pack's configuration files so changes can be tracked over ti
 - `manifest.json` — the mod list with exact versions
 - `modlist.html` — a readable list of every mod, with links
 - `overrides/config/` — the pack's config files
-- `overrides/mods/` — mods that aren't on CurseForge and get bundled directly
 
 ## Technical Stuff & GitHub Organization
 
@@ -99,6 +98,14 @@ Currently all test builds are run on my machine. This includes test builds for t
 | `prod-server` | Stable, working server-side config |
 
 All stable versions will be bundled in releases.
+
+**How releases are built:** the repo is the source of truth, not the raw CurseForge export. After exporting from CurseForge and copying `manifest.json`, `modlist.html` and `overrides/` in, `.gitignore` keeps personal settings (voice chat devices, JEI world data, backups) out of the repo. The release zip is then built from the committed files only:
+
+```bash
+git archive --format=zip -o Sockycraft-vX.Y.Z.zip HEAD manifest.json modlist.html overrides
+```
+
+That way nothing personal or session-specific ends up in what players download.
 
 The whole pack is NeoForge-native — no Fabric mods or Sinytra Connector. That's on purpose: Connector caused hard-to-trace crashes in testing, so Fabric-only mods are skipped unless there's no NeoForge alternative.
 

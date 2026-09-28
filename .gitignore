@@ -1,3 +1,43 @@
+# --- Build output ---
 *.zip
-overrides/config/spark/tmp*
+
+# --- OS junk ---
 .DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Backups / temp files mods leave behind ---
+*.bak
+*.tmp
+*.old
+overrides/config/spark/tmp*
+
+# --- Personal / per-player settings (never ship these) ---
+# Voice chat: your mic/speaker devices, per-player volumes, cached usernames
+overrides/config/voicechat/voicechat-client.properties
+overrides/config/voicechat/player-volumes.properties
+overrides/config/voicechat/category-volumes.properties
+overrides/config/voicechat/username-cache.json
+# JEI per-world bookmarks and history
+overrides/config/jei/world/
+
+# --- Game folders that should never be exported ---
+overrides/saves/
+overrides/logs/
+overrides/crash-reports/
+overrides/screenshots/
+overrides/_disabled/
+overrides/xaero/
+overrides/XaeroWaypoints*/
+overrides/options.txt
+overrides/servers.dat*
+overrides/usercache.json
+overrides/usernamecache.json
+overrides/command_history.txt
+
+# --- Fabric / Connector leftovers (pack is NeoForge-only) ---
+overrides/config/connector.json
+overrides/config/fabric/
+
+# --- Non-redistributable mod jars (players download these themselves) ---
+overrides/mods/*.jar
