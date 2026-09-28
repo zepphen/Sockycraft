@@ -1,6 +1,6 @@
 # Sockycraft
 
-A Minecraft modpack for friends and family.
+A Minecraft modpack I made for my friends and family.
 
 **Minecraft 1.21.1** · **NeoForge** · 79 mods
 
