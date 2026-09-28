@@ -68,7 +68,7 @@ This repo holds the pack's configuration files so changes can be tracked over ti
 
 Currently all test builds are run on my machine. This includes test builds for the server. I'm not made of money, so I only have one actual server running.
 
-The main branch is the stable, working client-side config. dev-client and dev-server branches are for testing changes to the respective configurations we have. server branch is for the stable, working server-side config. All stable versions will be bundled in releases.
+The main branch is the stable, working client-side config we use in production. dev-client and dev-server branches are for testing changes to the respective configurations we have. prod-server branch is for the stable, working server-side config that we use in production. All stable versions will be bundled in releases.
 
 ## FAQ
 
