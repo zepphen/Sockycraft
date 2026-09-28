@@ -29,6 +29,8 @@ That's it. The launcher installs the right Java version and everything else on i
 
 **Ask Zepphen for the server address.** The server is private and invite-only for a specific group of friends, so the address isn't listed here. Once you have it, add it under Multiplayer → Add Server. The server will come up as "Sockycraft".
 
+**Quick Note:** This server has the *MCA Reborn* mod, so you'll be asked to do some character customization when you get in for your offspring or something? Not sure how the mod works, to be honest. It was just requested that I add it. If you don't wanna do all that and spawn at the normal world spawn rather than the spawn you choose with MCA, just leave and rejoin when that screen pops up. You can always mess with MCA in game later on using `/mca`.
+
 ## Voice chat
 
 This pack has proximity voice chat — people sound closer when they're closer.
