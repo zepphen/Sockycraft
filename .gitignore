@@ -1,0 +1,3 @@
+*.zip
+overrides/config/spark/tmp*
+.DS_Store
