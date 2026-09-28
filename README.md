@@ -2,9 +2,9 @@
 
 A Minecraft modpack for friends and family.
 
-**Minecraft 1.21.1** · **NeoForge** · 69 mods
+**Minecraft 1.21.1** · **NeoForge** · 80 mods
 
-Create, Farmer's Delight, furniture, cozy critters, proximity voice chat, and a full set of YUNG's structure overhauls.
+Create, Farmer's Delight, furniture, cozy critters, horse-drawn carts, shared maps and waypoints, proximity voice chat, and a full set of YUNG's structure overhauls.
 
 ---
 
@@ -38,6 +38,22 @@ This pack has proximity voice chat — people sound closer when they're closer.
 - Press **V** to open the voice menu
 - Set your microphone the first time you join
 - Windows may ask for mic permission; say yes
+- If you're in a voice group, the names of everyone in it show up on screen
+
+## Maps, waypoints & pings
+
+- **Minimap** is always on in the corner. Press **M** for the full world map.
+- **Waypoints** — press **B** to drop one where you're standing. Waystones you've found show up on the map automatically.
+- **Shared map** — the map is shared with other players on the server, so you can see where everyone is and what they've explored.
+- **Ping Wheel** — ping a spot to point it out to everyone. Pings also show up on the map.
+
+Keybinds can be changed in Options → Controls if any of these clash with something.
+
+## Other handy stuff
+
+- **JEI** — the item list on the right side of your inventory. Hover over any item and press **R** to see how to make it, or **U** to see what it's used in. Essential for Create.
+- **SmartSort** — sorts chests and your inventory for you.
+- **AstikorCarts Redux** — carts you can hitch to horses (and other animals): supply carts for hauling, plows for farming, and animal carts for giving people a ride.
 
 ## If something goes wrong
 
@@ -54,7 +70,13 @@ This pack has proximity voice chat — people sound closer when they're closer.
 
 ## Updating
 
-When a new version is posted in [**Releases**](../..releases), download the new zip and import it as a fresh profile the same way. Your world is on the server, so nothing gets lost.
+When a new version is posted in [**Releases**](../../releases), download the new zip and import it as a fresh profile the same way. Your world is on the server, so nothing gets lost.
+
+**Want to keep your explored map?** Your map and waypoints are saved in your old profile, not on the server. Before you delete the old profile, open its folder (three dots → Open Folder) and copy the `xaero` folder into the new profile's folder.
+
+## What's new
+
+See [**CHANGELOG.md**](CHANGELOG.md) for what changed in each version.
 
 ## What's in here
 
@@ -63,12 +85,22 @@ This repo holds the pack's configuration files so changes can be tracked over ti
 - `manifest.json` — the mod list with exact versions
 - `modlist.html` — a readable list of every mod, with links
 - `overrides/config/` — the pack's config files
+- `overrides/mods/` — mods that aren't on CurseForge and get bundled directly
 
 ## Technical Stuff & GitHub Organization
 
 Currently all test builds are run on my machine. This includes test builds for the server. I'm not made of money, so I only have one actual server running.
 
-The main branch is the stable, working client-side config. dev-client and dev-server branches are for testing changes to the respective configurations we have. server branch is for the stable, working server-side config. All stable versions will be bundled in releases.
+| Branch | What it is |
+|---|---|
+| `main` | Stable, working client-side config |
+| `dev-client` | Testing changes to the client config |
+| `dev-server` | Testing changes to the server config |
+| `prod-server` | Stable, working server-side config |
+
+All stable versions will be bundled in releases.
+
+The whole pack is NeoForge-native — no Fabric mods or Sinytra Connector. That's on purpose: Connector caused hard-to-trace crashes in testing, so Fabric-only mods are skipped unless there's no NeoForge alternative.
 
 ## FAQ
 
