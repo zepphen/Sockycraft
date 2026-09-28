@@ -27,7 +27,7 @@ That's it. The launcher installs the right Java version and everything else on i
 
 **First launch is slow.** Two to five minutes is normal. It gets faster after that.
 
-**Ask Zepphen for the server address.** The server is private and invite-only, so the address isn't listed here. Once you have it, add it under Multiplayer → Add Server.
+**Ask Zepphen for the server address.** The server is private and invite-only for a specific group of friends, so the address isn't listed here. Once you have it, add it under Multiplayer → Add Server. The server will come up as "Sockycraft".
 
 ## Voice chat
 
@@ -52,7 +52,7 @@ This pack has proximity voice chat — people sound closer when they're closer.
 
 ## Updating
 
-When a new version is posted, download the new zip and import it as a fresh profile the same way. Your world is on the server, so nothing gets lost.
+When a new version is posted in [**Releases**](../..releases), download the new zip and import it as a fresh profile the same way. Your world is on the server, so nothing gets lost.
 
 ## What's in here
 
@@ -61,3 +61,22 @@ This repo holds the pack's configuration files so changes can be tracked over ti
 - `manifest.json` — the mod list with exact versions
 - `modlist.html` — a readable list of every mod, with links
 - `overrides/config/` — the pack's config files
+
+## Technical Stuff & GitHub Organization
+
+Currently all test builds are run on my machine. This includes test builds for the server. I'm not made of money, so I only have one actual server running.
+
+The main branch is the stable, working client-side config. dev-client and dev-server branches are for testing changes to the respective configurations we have. server branch is for the stable, working server-side config. All stable versions will be bundled in releases.
+
+## FAQ
+
+To be honest, no one has asked me questions about this server, but if you stumble on my repo, you may be wondering:
+- **Can I use these configs for my own game/server?**
+
+Yes! Absolutely. I don't own or have the rights to any of these mods. It's all public stuff and they're all public because they're free to use. I'd be glad if these configs were useful to other people.
+- **Can I join your server?**
+
+Currently, it's invite only for a specific group of my friends. I have no intention of opening this server to anyone else because it's their space and keeping our group small keeps the costs of running our server minimal. If I ever make this server public, I'll post the IP on here.
+- **Can I participate in running this server with you?**
+
+I'm currently using a generic Minecraft hosting service. Mostly because I'm busy with a lot of other projects I'm part of at school and I'm not interested in subjecting my friends to the hiccups of running a bare-metal VPS or something for this Minecraft server. You wouldn't learn much with me running things this way. What you *can* do is DM me on [Discord](https://discordapp.com/users/388759933128278016) or [email me](mailto:zepphen@proton.me) if you're interested in running a server or a Minecraft server or whatever else, and I'll gladly let you know if you can be part of any projects I'm in or intend to start. I'm also not against people proposing projects we may do together! I'll take any opportunity I can to learn :)
