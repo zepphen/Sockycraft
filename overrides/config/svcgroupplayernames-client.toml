@@ -1,0 +1,12 @@
+#Only show player names when they are talking
+onlyShowNamesWhenTalking = false
+#Draw an outline around player names for better visibility
+useTextOutline = false
+#Transparency of player names when talking (0-100)
+# Default: 100
+# Range: 0 ~ 100
+transparencyWhenTalking = 100
+#Transparency of player names when not talking (0-100)
+# Default: 50
+# Range: 0 ~ 100
+transparencyWhenNotTalking = 50
