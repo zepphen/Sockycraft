@@ -1,0 +1,8 @@
+#Horizontal search distance in blocks.
+# Default: 32
+# Range: 1 ~ 256
+horizontalSearchRange = 32
+#Vertical search distance in blocks.
+# Default: 8
+# Range: 1 ~ 128
+verticalSearchRange = 8

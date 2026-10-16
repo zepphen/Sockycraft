@@ -1,5 +1,5 @@
 [feature]
-	#Master switch. If false, no waypoint prompts are emitted on ping.
+	#Master switch. If false, no waypoint is auto-created on ping.
 	enabled = true
 	#If true, your own pings also create a temporary waypoint. If false, only teammates' pings do.
 	registerOwnPings = true

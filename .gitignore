@@ -40,4 +40,8 @@ overrides/config/connector.json
 overrides/config/fabric/
 
 # --- Non-redistributable mod jars (players download these themselves) ---
-overrides/mods/*.jar
+#overrides/mods/*.jar
+
+# --- Per-machine NeoForge settings (each player gets fresh defaults) ---
+# Holds things like the loading-window size, which came from the pack author's 4K screen
+overrides/config/fml.toml
