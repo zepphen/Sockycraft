@@ -1,0 +1,20 @@
+# Line endings: store text files with LF in the repo, convert to the
+# platform's native line ending on checkout. Stops Windows (CRLF) vs
+# Linux/macOS (LF) differences from showing up as changed lines.
+* text=auto
+
+# Scripts that must keep a specific line ending to run
+*.bat     text eol=crlf
+*.cmd     text eol=crlf
+*.sh      text eol=lf
+*.command text eol=lf
+
+# Binary files: never touch these
+*.jar  binary
+*.zip  binary
+*.png  binary
+*.jpg  binary
+*.ogg  binary
+*.nbt  binary
+*.mca  binary
+*.dat  binary
